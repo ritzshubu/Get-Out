@@ -22,7 +22,7 @@ const init=()=>{
     canvasResize();
     ctx=c.getContext("2d");
     events();
-    alert("Reach the red place!\nDon t forget leave a like and share your score in comments!");
+    alert("Reach the red place!\n");
     alert("Level 0");
     startLevel(first,first);
     time=startTime;
