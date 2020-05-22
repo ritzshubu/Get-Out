@@ -3,9 +3,9 @@ let mouse=[0,0];
 let camera=[0,0];
 let grid;
 let player;
-let lvl=0;
+let lvl=1;
 let time;
-const startTime=80;
+const startTime=50;
 const speed=2.8;
 const tileSize=30;
 const playerSize=20;
@@ -23,14 +23,14 @@ const init=()=>{
     ctx=c.getContext("2d");
     events();
     alert("Reach the red place!\n");
-    alert("Level 0");
+    alert("Level 1");
     startLevel(first,first);
     time=startTime;
     setInterval(()=>{
         if(--time<=0) {
             alert("You lost!");
             alert("You reached level "+lvl);
-            lvl=0;
+            lvl=1;
             time=startTime;
             startLevel(first,first);
         }
